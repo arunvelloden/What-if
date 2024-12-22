@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval world map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="medieval-map-page" class="container">
+        <h2 class="head">Medieval World Weather Map</h2>
+        <button onclick="window.location.href='index.html'">Back to home</button>
+
+        <img src="medieval_map.jpg" alt="Medieval City Map" usemap="#medieval-map" id="medieval-map">
+
+        <map name="medieval-map">
+        
+            <area shape="rect" coords="378,289,278,244" alt="Rohan" onclick="showWeather('Rohan')">
+            <area shape="rect" coords="367,375,267,330" alt="Gondor" onclick="showWeather('Gondor')">
+            <area shape="rect" coords="565,369,465,324" alt="Mordor" onclick="showWeather('Mordor')">
+            <area shape="rect" coords="472,256,359,98" alt="Rhovanion" onclick="showWeather('Rhovanion')">
+            <area shape="rect" coords="416,54,305,7" alt="Forodwaith" onclick="showWeather('Forodwaith')">
+            <area shape="rect" coords="592,473,478,435" alt="Near harad" onclick="showWeather('Near harad')">
+            <area shape="rect" coords="287,207,81,76" alt="Eriador" onclick="showWeather('Eriador')">
+        
+        </map>
+
+
+        <div id="weather-info" class="desc"></div>
+    </div>
+
+    <script src="medieval.js"></script>
+</body>
+</html>
